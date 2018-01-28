@@ -1,5 +1,6 @@
 # CCNA
 #MÔ HÌNH OSI
+
 ##Giới thiệu về mô hình phân lớp
 - Host: là một thực thể mà có khả năng truyền ứng dụng.
 - Host-to-host: Để truyền thông từ một host đến 1 host cần các mô hình:
@@ -63,7 +64,5 @@
 |Application|
 |-----------|
 |Transport|
-|-----------|
 |Internet|
-|-----------|
 |Network Access|
