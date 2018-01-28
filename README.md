@@ -66,4 +66,4 @@
 |-----------|
 |Internet|
 |-----------|
-|Network Access|  
+|Network Access|
