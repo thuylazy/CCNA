@@ -15,7 +15,7 @@
   <li>Thúc đẩy kĩ thuật modun hóa (Có sự chuyên môn hóa trong kĩ thuật sản xuất).
   <li>Đảm bảo tương thích về công nghệ.
   </ul>
-##**II.Mô hình OSI (Open System Interconnection)- Liên kết nối caccs hệ thống mở**
+##**II.Mô hình OSI (Open System Interconnection)- Liên kết nối các hệ thống mở**
 - Là mô hình phân lớp nổi tiếng
 - Gồm 7 lớp:
   <ul>
