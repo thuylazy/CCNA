@@ -62,5 +62,12 @@
   <li>Là giao thức connection-oriented
   <li>Kiểu truyền Full-duplex: có thể truyền và nhận tại 1 thời điểm
   <li>Có cơ chế báo nhận
-  <li>Có cơ chế phục hồi dữ liệu
+  <li>Có cơ chế phục hồi dữ liệu 
+  <li>Thiết lập một kết nối TCP:
+      <ul>
+      <li>Cơ chế bắt tay 3 bước (Three-Way Handshake)
+      <li>Cơ chế báo nhận trong TCP (TCP Acknowledgment): Kích thước cửa sổ cố định
+      <li>Cơ chế cửa sổ trượt (TCP Sliding Windowing): Kích thước cửa sổ có thể thay đổi được
+      </ul>
   </ul>
+
