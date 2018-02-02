@@ -27,4 +27,19 @@
 - Giao thức CSMA/CD (Đa truy nhập cảm biến sóng mang dò được xung đột): giảm thiểu tối đa sự xung đột có thể xảy ra trên một hệ thống mạng
 - Cấu trúc của các Ethernet Frame:
 - Một số hình thức truyền thông trong mạng LAN:
+  <ul>
+  <li>Unicast: 1 host gửi dữ liệu cho 1 host
+  <li>Broadcast: 1 host gửi dữ liệu cho tất cả các host còn lại trong hệ thống
+  <li>Multicast: 1 host gửi cho một nhóm host trong hệ thống
+  </ul>
 - Địa chỉ MAC được sử dụng trong môi trường LAN:
+  <ul>
+  <li>MAC: địa chỉ vật lý của lớp 2
+  <li>MAC: là 1 dãy nhị phân dài 48bit
+  <li>Gồm 2 phần: 
+      <ul>
+      <li>OUI: định danh cho nhà sản xuất
+      <li>Vendor Assigned: định danh cho từng thiết bị do nhà sản xuất đó sx ra
+      </ul>
+  </ul>
+
