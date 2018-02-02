@@ -1,6 +1,6 @@
-#**BÀI 1: MÔ HÌNH OSI**
+# **BÀI 1: MÔ HÌNH OSI**
 
-##**I.Giới thiệu về mô hình phân lớp**
+## **I.Giới thiệu về mô hình phân lớp**
 - *Host:* là một thực thể mà có khả năng truyền ứng dụng.
 - *Host-to-host:* Để truyền thông từ một host đến 1 host cần các mô hình:
   <ul>
@@ -14,7 +14,7 @@
   <li>Thúc đẩy kĩ thuật modun hóa (Có sự chuyên môn hóa trong kĩ thuật sản xuất).
   <li>Đảm bảo tương thích về công nghệ.
   </ul>
-##**II.Mô hình OSI (Open System Interconnection)- Liên kết nối các hệ thống mở**
+## **II.Mô hình OSI (Open System Interconnection)- Liên kết nối các hệ thống mở**
 - Là mô hình phân lớp nổi tiếng
 - Gồm 7 lớp:
   <ul>
@@ -39,7 +39,7 @@
       <li>Truyền 1 dòng bit qua 1 đường truyền vật lý cụ thể nào đó.
       <li>Quy định các đặc điểm của một đường truyền vật lý về cơ, điện, quang, các thủ tục chức năng để làm sao đó có thể truyền được 1 dòng bit nhị phân qua đường truyền vật lý.
       </ul>
-##**III.Cách hoạt động mô hình OSI**
+## **III.Cách hoạt động mô hình OSI**
 - Đi từ trên xuống dưới ( Từ lớp 7 xuống lớp 1).
 - Header (HDR): Là thông tin quản lí của một gói tin.
 - Toàn bộ gói tin lớp trên sẽ là phần dữ liệu của gói tin lớp dưới. Riêng ở lớp 2 có thêm phần kiểm tra lỗi FCS. Lớp vật lý: chuyển hóa thành một dòng bit nhị phân.

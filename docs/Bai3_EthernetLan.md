@@ -1,4 +1,4 @@
-#**Bài 3: Ethernet LAN**
+# **Bài 3: Ethernet LAN**
 
 **LAN** (Local Area Network - Mạng nội bộ): Là một mạng có quy mô vừa hoặc nhỏ dùng trong một bệnh viện, một trường học,... có tốc độ cao và có nhiều kích thước khác nhau (có thể rất nhỏ hoặc rất lớn).
 - Các thành phần cơ bản của mạng LAN:

@@ -1,6 +1,6 @@
-#**BÀI 2.MÔ HÌNH TCP/IP**
+# **BÀI 2.MÔ HÌNH TCP/IP**
 
-##**I.Cấu trúc**
+## **I.Cấu trúc**
 - Gồm 4 lớp:
   <ul>
   <li>Sử dụng các tên khác nhau từ lớp 1 đến lớp 3
@@ -20,7 +20,7 @@
   <li>Network Access: Ethernet
   </ul>
 
-##**II.Tìm hiểu tầng transport**
+## **II.Tìm hiểu tầng transport**
 - Tương đương tầng transport của mô hình OSI
 - Có 2 giao thức nổi tiếng: UDP và TCP
 - Dùng để:
