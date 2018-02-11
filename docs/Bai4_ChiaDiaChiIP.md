@@ -3,25 +3,32 @@
 1. **Một số kiến thức toán sử dụng trong việc tính toán địa chỉ IP**
 - Chuyển đổi giữa hệ nhị phân và thập phân
 - Một số giá trị lũy thừa 2 phải nhớ: 2^1 đến 2^12, 2^16
-  Cho n bit nhị phân => 2^n số nhị phân n-bit chạy từ: 00..0 (n bit 0) đến 11..1(n bit 1) hay từ 0 đến 2^n - 1 (trong hệ thập phân)
+  <ul>
+  <li>Cho n bit nhị phân => 2^n số nhị phân n-bit chạy từ: 00..0 (n bit 0) đến 11..1(n bit 1) hay từ 0 đến 2^n - 1 (trong hệ thập phân)
+  </ul>
 - Bảng: 
   <ul>
   <li> Bảng 1:
-      0000 0000 <-> 0
-      1000 0000 <-> 128
-      1100 0000 <-> 192
-      1110 0000 <-> 224
-      1111 0000 <-> 240
-      1111 1000 <-> 248
-      1111 1100 <-> 252
-      1111 1110 <-> 254
-      1111 1111 <-> 255
+      <ul>
+      <li>0000 0000 <-> 0
+      <li>1000 0000 <-> 128
+      <li>1100 0000 <-> 192
+      <li>1110 0000 <-> 224
+      <li>1111 0000 <-> 240
+      <li>1111 1000 <-> 248
+      <li>1111 1100 <-> 252
+      <li>1111 1110 <-> 254
+      <li>1111 1111 <-> 255
+      </ul>
   <li> Bảng 2:
-      Gọi n: số bit mượn => bước nhảy = 2^{8-n}
-      |Số bit mượn|1|2|3|4|5|6|7|8|
-      |----------------------------|
-      |Bước nhảy|128|64|32|16|8|4|2|1|
-  </ul>
+      <ul>
+      <li>Gọi n: số bit mượn => bước nhảy = 2^{8-n}
+
+         |Số bit mượn|1|2|3|4|5|6|7|8|
+         |-----------|-|-|-|-|-|-|-|-|
+         |Bước nhảy|128|64|32|16|8|4|2|1|
+
+      </ul>
 
 2. **Cấu trúc địa chỉ IP**
 - Địa chỉ IP là một dãy nhị phân dài tổng cộng 32 bits
@@ -31,7 +38,9 @@
   <li>Host: định danh cho từng host cụ thể trong mạng mt ấy
   </ul>/ul
 - Được viết thành từng cụm 8 bits, được gọi là một octet. Các octet được đổi ra số thập phân và được ngăn cách với nhau bằng dấu chấm.
-  VD: 10000000 01101100 01111010 11001100 --> 131.108.122.204
+  <ul>
+  <li>VD: 10000000 01101100 01111010 11001100 --> 131.108.122.204
+  <ul>
 - Các bit phần mạng không được phép đồng thời bằng 0
 - Nếu tất cả các bit phần host = 0 --> địa chỉ mạng
 - Nếu tất cả các bit phần host = 1 --> địa chỉ quảng bá (broadcast)
@@ -134,34 +143,44 @@
 - Ý nghĩa của địa chỉ private: bảo tồn địa chỉ IP public
 
 4. **BÀI TẬP**
-  Cho viết địa chỉ nào sau đây có thể dùng cho host:
-  A. 150.100.255.255 : địa chỉ lớp B, host =1 => địa chỉ broadcast => không dùng cho host
-  B. 175.100.255.18 : địa chỉ lớp B, có thể dùng cho host
-  C. 195.234.253.0 : địa chỉ lớp C, host =0 => địa chỉ mạng => không dùng cho host
-  D. 100.0.0.23 : địa chỉ lớp A, có thể dùng cho host
-  E. 188.258.221.176: k tồn tại địa chỉ này
-  F. 127.34.25.189: k thuộc lớp nào=> k dùng cho host
-  G. 224.156.217.73: địa chỉ lớp D(Multicast) => không dùng cho host
+- Cho viết địa chỉ nào sau đây có thể dùng cho host:
+  <ul>
+  <li>A. 150.100.255.255 : địa chỉ lớp B, host =1 => địa chỉ broadcast => không dùng cho host
+  <li>B. 175.100.255.18 : địa chỉ lớp B, có thể dùng cho host
+  <li>C. 195.234.253.0 : địa chỉ lớp C, host =0 => địa chỉ mạng => không dùng cho host
+  <li>D. 100.0.0.23 : địa chỉ lớp A, có thể dùng cho host
+  <li>E. 188.258.221.176: k tồn tại địa chỉ này
+  <li>F. 127.34.25.189: k thuộc lớp nào=> k dùng cho host
+  <li>G. 224.156.217.73: địa chỉ lớp D(Multicast) => không dùng cho host
+  </ul>
 
 5. **Cách máy tính xác định địa chỉ mạng:**
 
 - Subnet-mark là một dãy nhị phân dài 32 bits được dùng để AND với địa chỉ IP để xác định địa chỉ mạng của địa chỉ IP ấy.
-  VD: Có địa chỉ IP: 192.168.1.1. Để xác định địa chỉ mảng của địa chỉ IP này ta AND với subnet -mark 255.255.255.0
-     192.168.1.1   -> 11000000.10101000.00000001.00000001
-AND  255.255.255.0 -> 11111111.11111111.11111111.00000000
-KQ:                   11000000.10101000.00000001.00000000
-                   <-> 192.168.1.0
+  <ul>
+  <li>VD: Có địa chỉ IP: 192.168.1.1. Để xác định địa chỉ mảng của địa chỉ IP này ta AND với subnet -mark 255.255.255.0
+  <li> 192.168.1.1  AND  255.255.255.0   
+  <li>-> 11000000.10101000.00000001.00000001  AND 11111111.11111111.11111111.00000000
+  <li>KQ:11000000.10101000.00000001.00000000 <-> 192.168.1.0
+
 - Khai báo một địa chỉ IP trên card mạng của máy tính bắt buộc phải khai báo một địa chỉ IP kèm với subnet-mark. 
+
   |Lớp|Subnet-mark|
+  |----|----------|
   |A|255.0.0.0|
   |B|255.255.0.0|
   |C|255.255.255.0|
+
 - Quy tắc viết địa chỉ IP: Sử dụng số Prefix, gọi là Prefix-length
-     A.B.C0D/n với n: số bit mạng
-VD: 
-  172.16.1.1
-  255.255.0.0
--> 172.16.1.1/16
+  <ul>
+  <li>   **A.B.C.D/n** với n: số bit mạng
+  <li>VD: 
+      <ul>
+      <li>172.16.1.1
+      <li>255.255.0.0
+      <li>-> 172.16.1.1/16
+      </ul>
+  </ul>
 
 
 
