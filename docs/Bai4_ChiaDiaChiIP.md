@@ -1,6 +1,6 @@
 # **Bài 4: Chia địa chỉ IP**
 
-1. **Một số kiến thức toán sử dụng trong việc tính toán địa chỉ IP**
+##1. **Một số kiến thức toán sử dụng trong việc tính toán địa chỉ IP**
 - Chuyển đổi giữa hệ nhị phân và thập phân
 - Một số giá trị lũy thừa 2 phải nhớ: 2^1 đến 2^12, 2^16
   <ul>
@@ -24,19 +24,19 @@
       <ul>
       <li>Gọi n: số bit mượn => bước nhảy = 2^{8-n}
 
-         |Số bit mượn|1|2|3|4|5|6|7|8|
-         |-----------|-|-|-|-|-|-|-|-|
-         |Bước nhảy|128|64|32|16|8|4|2|1|
+     |Số bit mượn|1|2|3|4|5|6|7|8|
+     |-----------|-|-|-|-|-|-|-|-|
+     |Bước nhảy|128|64|32|16|8|4|2|1|
 
       </ul>
 
-2. **Cấu trúc địa chỉ IP**
+##2. **Cấu trúc địa chỉ IP**
 - Địa chỉ IP là một dãy nhị phân dài tổng cộng 32 bits
 - Gồm 2 phần:
   <ul>
   <li>Networks: định danh cho cả một mạng máy tính
   <li>Host: định danh cho từng host cụ thể trong mạng mt ấy
-  </ul>/ul
+  </ul>
 - Được viết thành từng cụm 8 bits, được gọi là một octet. Các octet được đổi ra số thập phân và được ngăn cách với nhau bằng dấu chấm.
   <ul>
   <li>VD: 10000000 01101100 01111010 11001100 --> 131.108.122.204
@@ -131,7 +131,7 @@
       <li>Local broadcast: 255.255.255.255
       </ul>
 
-3. **Các loại địa chỉ IP**
+##3. **Các loại địa chỉ IP**
 -Có 2 loại địa chỉ IP: Private và Public
 - Dải địa chỉ Private:
   <ul>
@@ -142,7 +142,7 @@
 - NAT: chuyển đổi private <-> public
 - Ý nghĩa của địa chỉ private: bảo tồn địa chỉ IP public
 
-4. **BÀI TẬP**
+##4. **BÀI TẬP**
 - Cho viết địa chỉ nào sau đây có thể dùng cho host:
   <ul>
   <li>A. 150.100.255.255 : địa chỉ lớp B, host =1 => địa chỉ broadcast => không dùng cho host
@@ -154,12 +154,12 @@
   <li>G. 224.156.217.73: địa chỉ lớp D(Multicast) => không dùng cho host
   </ul>
 
-5. **Cách máy tính xác định địa chỉ mạng:**
+##5. **Cách máy tính xác định địa chỉ mạng:**
 
 - Subnet-mark là một dãy nhị phân dài 32 bits được dùng để AND với địa chỉ IP để xác định địa chỉ mạng của địa chỉ IP ấy.
   <ul>
   <li>VD: Có địa chỉ IP: 192.168.1.1. Để xác định địa chỉ mảng của địa chỉ IP này ta AND với subnet -mark 255.255.255.0
-  <li> 192.168.1.1  AND  255.255.255.0   
+  <li> 192.168.1.1  AND  255.255.255.0
   <li>-> 11000000.10101000.00000001.00000001  AND 11111111.11111111.11111111.00000000
   <li>KQ:11000000.10101000.00000001.00000000 <-> 192.168.1.0
 
