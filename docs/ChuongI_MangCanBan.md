@@ -22,14 +22,4 @@
 ## 1.10. Thiết bị định tuyến Cisco (Router Cisco)
 ## 1.11. Thiết bị tường lửa Cisco (Firewall Cisco)
  
-# CHƯƠNG II: TCP/IP
-## 2.1. Giao thức (protocol)
-- Tập hợp các quy tắc cho phép các thiết bị có thể gaio tiếp, trao đổi thông tin với nhau.
-- Các giao thức mạng phổ biến: 
-   <ul>
-   <li> TCP/IP
-   <li> IPx/SPx
-   <li> Appletalk
-   <li> Netbios
-   <li> OSI
-   </ul>
+
