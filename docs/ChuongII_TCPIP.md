@@ -1,6 +1,6 @@
 # CHƯƠNG II: TCP/IP
 ## 2.1. Giao thức (protocol)
-- Tập hợp các quy tắc cho phép các thiết bị có thể gaio tiếp, trao đổi thông tin với nhau.
+- Tập hợp các quy tắc cho phép các thiết bị có thể giao tiếp, trao đổi thông tin với nhau.
 - Các giao thức mạng phổ biến: 
    <ul>
    <li> TCP/IP
@@ -44,4 +44,52 @@
 - H: Host ID - địa chỉ của một thiết bị cụ thể trong hệ thống mạng
 - N: Network ID - là địa chỉ cung cấp cho từng mạng riêng
 ## 2.12. Mạng và địa chỉ Broadcast
+- Network ID:
+  <ul>
+  <li> Định danh cho một mạng.
+  <li> Các bit trong phần Host ID đều là bit 0.
+  </ul>
+- Địa chỉ Broadcast: 
+  <ul>
+  <li> Là địa chỉ đại diện cho toàn bộ thiết bị trong một mạng
+  <li> Là địa chỉ IP lớn nhất trong một dải mạng
+  <li> Các bit trong phần Host ID đều là bit 1
+  </ul>
+- IP khả dụng trong 1 mạng:
+  <ul>
+  <li> Là những IP có thể sử dụng gán cho các Host
+  </ul>
+## 2.13. Subnet - mask
+- subnet - mask là để phân biệt giữa phần Network và phần Host
+- 1 là đại diện cho phần Network
+- 0 là đại diện cho phần host
+- Class A: **N**.H.H.H **255**.0.0.0
+- Class B: **N.N**.H.H **255.255**.0.0
+- Class C: **N.N.N**.H **255.255.255**.0
+## 2.14. Địa chỉ riêng (Reserved Address)
+- Class D và class E
+- Gồm Network ID và Broadcast ID
+- 0.x.x.x - không hợp lệ
+- 127.x.x.x - dành cho địa chỉ Loopback 
+## 2.15. 127.x.x.x - Địa chỉ Loopback 
+- Địa chỉ được sử dụng để kiểm tra giao thức TCP/IP trên chính thiết bị đó
+- Lệnh ktra: ping 127.0.0.1
+## 2.16. Địa chỉ IP Private/IP Public
+  |Private IP|Public IP|
+  |----------|---------|
+  |1. Đc sử dụng trong mạng LAN hoặc trong một tổ chức riêng.|1. Đc sd là địa chỉ công cộng trong internet|
+  |2. K đc nhận diện Internet|2. Đc nhận diện trên Internet|
+  |3. Cấp phát tự do bởi người quản trị hệ thống|3. Đc cung cấp bởi nhà cung cấp dịch vụ(từ IANA), việc cấp phát tuân thủ các quy trình quy định nghiên ngặt|
+  |4. Là địa chỉ duy nhất trong một mạng hoặc một tổ chức| 4. Là địa chỉ duy nhất trên toàn cầu|
+  |5. Miễn phí|5. Phải trả chi phí cho nhà cũng cấp dịch vụ ( hay IANA)
+  |6. Không đc đăng kí chủ sở hữu|6. Dc đăng kí chủ sở hữu|
+## 2.17. Địa chỉ cá nhân (Private IP Address)
+- Là địa chỉ nhất định trong mỗi lớp địa chỉ IP đc các tổ chức sử dụng để cấp phát cho các thiết bị trong mạng nội bộ.
+- Lớp A: **10**.0.0.0 đến **10**.255.255.255
+- Lớp B: **172.16**.0.0 đến **172.31**.255.255
+- Lớp C: **192.168.0**.0 đến **192.168.255**.255
+## 2.18. Phân bổ địa chỉ IP
+- Đăng kí Internet theo khu vực (REgional Internet Registries - RIRs)
+- Đăng kí chính thức tại IANA.org 
+## 2.19. Mạng con (subnetting)
 
